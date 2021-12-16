@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>MCU Movie Details</title>
+</head>
+
+<body>
+  <!-- header -->
+<header class ="header">
+    <h1>MCU Movie Details</h1>
+  </header>
+
+  <div id="searchPage">
+    <div class="Facets" id="facets"> <!--The Search Criteria-->
+        <div class="Characters">
+            <!-- Used this article that ranks the top characters for the selection https://screenrant.com/ten-best-characters-mcu-according-ranker/ -->
+            <h3>Viewing By Characters</h3>
+              <div id="movieOptionsDiv">
+                <input type="radio" value="Black Panther" name="Movie" /> Black Panther</label>
+                <input type="radio" value="Guardians of the Galaxy" name="Movie" /> Guardians of the Galaxy                  </label>
+                <input type="radio" value="Black Widow" name="Movie" /> Black Widow</label>
+                <input type="radio" value="Doctor Strange" name="Movie" /> Doctor Strange</label>
+                <input type="radio" value="Spider-Man: Homecoming" name="Movie" /> Spider-Man: Homecoming</label>
+                <input type="radio" value="Captain America: Civil War" name="Movie" /> Captain America: Civil War</label>
+                <input type="radio" value="Thor: Ragnarok" name="Movie" /> Thor: Ragnarok</label>
+                <input type="radio" value="Iron Man" name="Movie" /> Iron Man</label>
+                <input type="radio" value="Ant-Man" name="Movie" /> Ant-Man</label>
+              </div>
+        </div>
+    </div>
+    <button onclick="filteredSearch()" class="btn" type="button">Submit</button>
+  </div>
+  <div id="movieDetailPage" class="hidden">
+    <table>
+      <tr>
+        <th>Detail Name</th>
+        <th>Info</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td id="movieName"></td>
+      </tr>
+      <tr>
+        <td>Poster</td>
+        <td id="Poster"></td>
+      </tr>
+      <tr>
+        <td>Release Date</td>
+        <td id="releaseDate"></td>
+      </tr>
+      <tr>
+        <td>Revenue</td>
+        <td id="revenue"></td>
+      </tr>
+      <tr>
+        <td>Vote Average</td>
+        <td id="voteAverage"></td>
+      </tr>
+    </table>
+  </div>
+
+      <!-- Main content-->
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row">
+          
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
